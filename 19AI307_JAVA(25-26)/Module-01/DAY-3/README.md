@@ -1,68 +1,63 @@
-# Ex.No:1(D) ARRAYS
+# Ex.No:1(C) LOOPING STATEMENT
 
 ## QUESTION:
-Write a Java program to find the index of a given element in an array
-
+Construct a right-angled triangle star pattern using for loop.
 ## AIM:
-To write a Java program that reads an array of integers and finds the index of a given element within the array.
+To write a Java program using looping statements to print a right-angled triangle star pattern based on user input.
 
 ## ALGORITHM :
-1.Start the program and read the size of the array n.
+1.	Start the program.
 
-2.Read n integer elements and store them in the array a[ ].
+2.	Import the necessary package 'java.util'
 
-3.Read the element x whose index needs to be found.
+3. Read the number of rows from the user.
 
-4.Traverse the array from index 0 to n-1:
+4. Use an outer loop to iterate through each row.
 
-     If a[i] == x, print the index i and terminate the program.
+5. Use an inner loop to print stars (*) for each row.
 
-5.If the loop finishes without a match, print "Element not found".
+6. Move to the next line after printing stars for each row.
 
-6.End the program.	
+7. End the program.
+
 
 ## PROGRAM:
  ```
 /*
-Program to implement a Array concept using Java
+Program to implement a Looping Statement using Java
 Developed by: RATHISH KUMAR C
-Register Number:21222100043
+Register Number:212222100043
 */
 ```
 
 ## SOURCE CODE:
-```
-import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int a[] = new int[n];
-        for (int i = 0; i < n; i++) 
-        {
-        a[i] = sc.nextInt();
-        }
-        
-        int x = sc.nextInt();
-        for (int i = 0; i < n; i++) {
-            if (a[i] == x) {
-                System.out.println(i);
-                return;
+```
+import java.util.*;
+public class TrianglePattern
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for (int i = 1; i <= n; i++) 
+        {         
+            for (int j = 1; j <= i; j++) 
+            {      
+                System.out.print("* ");
             }
-            
+            System.out.println();              
         }
-        System.out.println("Element not found");
-        
     }
 }
 ```
 
 ## OUTPUT:
-<img width="558" height="590" alt="image" src="https://github.com/user-attachments/assets/0d53717f-affe-4aaf-b448-35ef728bee48" />
+<img width="399" height="395" alt="image" src="https://github.com/user-attachments/assets/07286d0c-5174-4702-8d58-34b630bd23d6" />
 
 ## RESULT:
-Therefore the program successfully searches the array for the given element.
+Thus, the Java program using looping statements to print a right-angled triangle star pattern was successfully written, executed, and verified.
+
 
 
 
